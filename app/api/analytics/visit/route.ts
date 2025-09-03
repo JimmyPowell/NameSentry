@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     const sevenDaysAgo = new Date();
     sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
     
-    for (const [date] of dailyVisits) {
+    for (const [date] of Array.from(dailyVisits.entries())) {
       if (new Date(date) < sevenDaysAgo) {
         dailyVisits.delete(date);
       }

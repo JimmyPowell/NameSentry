@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { GitHubApiClient } from '@/lib/github-api';
 import { z } from 'zod';
 
+export const runtime = 'edge';
+
 const searchSchema = z.object({
   q: z.string().min(1).max(100),
 });

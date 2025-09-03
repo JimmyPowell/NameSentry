@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+export const runtime = 'edge';
+
 // 简单的内存统计（重启会清零）
 let totalVisits = 0;
 let dailyVisits = new Map<string, number>();

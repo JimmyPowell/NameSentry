@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { GitHubApiClient } from '@/lib/github-api';
 
+export const runtime = 'edge';
+
 export async function GET() {
   try {
     const githubToken = process.env.GITHUB_TOKEN;

@@ -15,7 +15,7 @@ A modern web application to check if your project name is available on GitHub. B
 ### 1. Clone & Install
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/JimmyPowell/NameSentry.git
 cd namesentry
 npm install
 ```
